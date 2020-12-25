@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container mt-4">
+		<h1 class="text-center"><i class="fa fa-gamepad text-warning"></i> Get The List of Your Favourite Games </h1>
+
+		<form action="" class="form-group">
+			<!-- This is the Part of Name -->
+			<label for="Name" class="form-label">Name</label>
+			<input id="name" type="text" class="form-control bg-dark text-light" placeholder="Enter The Name of Your Favourite Game">
+			
+
+			<!-- This is the Part of Why favourite -->
+			<label class="form-label" for="wFavourite">Why Favourite?</label>
+			<input id="wFavourite" type="text" class="form-control bg-dark text-light" placeholder="Enter the reason">
+
+			<!-- This is the part of Publisher Name -->
+			<label class="form-label" for="PublisherNAme">Publisher Name</label>
+			<input id="pubName" type="text" class="form-control bg-dark text-light" placeholder="Enter the Publisher Name Here">
+
+			<!-- This is the Part of URL -->
+			<label class="form-label" for="url">Enter the URL (Optional)</label>
+			<input id="url" type="text" class="form-control bg-dark text-light" placeholder="Enter the URL Of your Favourite Game">       
+
+
+			<!-- Button -->
+			 <input id="btn" type="submit" value="Make List" class="btn btn-warning btn-block mt-4" />
+
+
+			 
+		</form>
+
+		<table class="table table-striped mt-4 text-center">
+			<thead>
+				<tr>
+				  <th>Name</th>
+				  <th>Reason</th>
+				  <th>Publisher Name</th>
+				  <th>URL</th>
+				</tr>
+			  </thead>
+			  <tbody id="game-list"></tbody>
+		 </table>
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>
